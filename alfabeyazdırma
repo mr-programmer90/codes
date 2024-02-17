@@ -1,0 +1,26 @@
+#include <iostream>
+#include <stdio.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+int main() {
+	
+	int alfabe = 96;
+
+	while (alfabe <= 121) {
+		alfabe = alfabe + 1;
+		printf("%c \n--", alfabe);
+	}
+
+
+	alfabe = 64;
+
+	while (alfabe <= 89) {
+		alfabe = alfabe + 1;
+		printf("%c \n--", alfabe);
+	}
+
+
+
+	return 0;
+}
