@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void is(){
+	string isimler[5];
+	cout << "5 tane isim gir:";
+
+	for (int i = 0; i < 5; i++) {
+		cin >> isimler[i];
+	}
+
+	cout << "girdiginiz isim1 = " << isimler[0] << endl << "girdiginiz isim2 = " << isimler[1] << endl << "girdiginiz isim3 = " << isimler[2] << endl << "girdiginiz isim4 = " << isimler[3] << endl << "girdiginiz isim5 = " << isimler[4] << endl;
+}
+
+int main() {
+	is();
+	return 0;
