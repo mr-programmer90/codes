@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void sayilarialma(int sayilar[]) {
+    cout << "Lutfen 10 tane sayi giriniz:\n";
+    for (int i = 0; i < 10; ++i) {
+        cout << "Sayi " << i + 1 << ":";
+        cin >> sayilar[i];
+    }
+}
+
+void sayilariyazdirma(int sayilar[]) {
+    cout << "Girilen sayilar:\n";
+    for (int i = 0; i < 10; ++i) {
+        cout << sayilar[i]<<" " ;
+    }
+    cout << endl;
+}
+
+int main() {
+    int sayilar[10];
+    sayilarialma(sayilar);
+    sayilariyazdirma(sayilar);
+
+    return 0;
+}
