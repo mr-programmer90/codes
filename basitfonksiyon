@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void deger(){
+	int s1;
+	cout << "sayi gir:";
+	cin >> s1;
+	cout << s1;
+	
+}
+
+int main() {
+	
+deger();
+		
+	return 0;
+}
