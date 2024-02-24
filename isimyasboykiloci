@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int fok(string d, string e,int a, int b , int c ) {
+	
+
+	cout<<"----------------------"<<endl << "isim = " << d << endl << "yas = " << c << endl << "cinsiyet = " << e << endl << "boy = " << a << endl << "kilo = " << b;
+	return 0;
+}
+
+int main() {
+	int yas, boy, kilo;
+	string ad, cinsiyet;
+	cout << "adini gir:";
+	cin >> ad;
+	cout << "yasini gir:";
+	cin >> yas;
+	cout << "boy gir:";
+	cin >> boy;
+	cout << "kilo gir:";
+	cin >> kilo;
+	cout << "cinsiyet gir:";
+	cin >> cinsiyet;
+
+	fok(ad,cinsiyet,boy,kilo,yas);
+	return 0;
+}
