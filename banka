@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+int parayatir(int yenibakiye) {
+	int yatirmamiktari;
+	cout << "ne kadar yatirmak istersin:";
+	cin >> yatirmamiktari;
+	if (yatirmamiktari > 0) {
+		yenibakiye = yenibakiye + yatirmamiktari;
+	}
+	else {
+		cout << "eksi yatiramazsiniz" << endl;
+	}
+	return yenibakiye;
+}
+
+int paracek(int yenibakiye2) {
+	int cekmemiktari;
+	cout << "ne kadar :" ;
+	cin >> cekmemiktari;
+	if (cekmemiktari <= yenibakiye2 && cekmemiktari > 0) {
+		yenibakiye2 = yenibakiye2 - cekmemiktari;
+	}
+	else {
+		for (;;) {
+			cout << "vay seni cakkal" << endl;
+		}
+	}
+	return yenibakiye2;
+}
+
+
+
+
+
+int main() {
+	int islem;
+	int bakiye = 0;
+	for (;;) {
+		cout << "para yatir:1" << endl << "para cek:2" << endl << "bakiye goruntule:3" << endl << "cikis:4" << endl;
+		cin >> islem;
+
+		
+
+		switch (islem) {
+
+		case 1:
+			bakiye = parayatir(bakiye);
+			cout << endl;
+			break;
+		case 2:
+			bakiye=paracek(bakiye);
+			cout << endl;
+			break;
+		case 3:
+			cout <<"bakiyeniz = " << bakiye << endl;
+			cout << endl;
+			break;
+		case 4:
+			exit(0);
+			break;
+		default:
+			cout << "hata!!!!!!" << endl;
+		}
+	
+
+	}
+
+
+	return 0;
+}
