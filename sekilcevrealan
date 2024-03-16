@@ -1,0 +1,161 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+void ucgen() {
+	int hesapsecimi;
+	cout << "alani hesaplamak istiyorsaniz 1'i" << endl << "cevreyi hesaplamak istiyorsaniz 2'yi" << endl << "secim :";
+	cin >> hesapsecimi;
+
+	if (hesapsecimi == 1) {
+		int taban, yukseklik;
+		cout << "taban uzunlugu:";
+		cin >> taban;
+		cout << "yukseklik uzunlugu:";
+		cin >> yukseklik;
+		int sonuc = (taban * yukseklik) / 2;
+		cout << sonuc << endl;
+		Sleep(3000);
+	}
+	if (hesapsecimi == 2) {
+		int kenar1,kenar2,kenar3;
+		cout << "1.kenar uzunlugu:";
+		cin >> kenar1;
+		cout << "2.kenar uzunlugu:";
+		cin >> kenar2;
+		cout << "3.kenar uzunlugu:";
+		cin >> kenar3;
+		int sonuc = kenar1+kenar2+kenar3;
+		cout << sonuc << endl;
+		Sleep(3000);
+	}
+
+
+
+	return;
+}
+
+void dikdortgen() {
+	int hesapsecimi;
+	cout << "alani hesaplamak istiyorsaniz 1'i" << endl << "cevreyi hesaplamak istiyorsaniz 2'yi" << endl << "secim :";
+	cin >> hesapsecimi;
+
+	if (hesapsecimi == 1) {
+		int taban, yukseklik;
+		cout << "taban uzunlugu:";
+		cin >> taban;
+		cout << "yukseklik uzunlugu:";
+		cin >> yukseklik;
+		int sonuc = taban * yukseklik;
+		cout << sonuc << endl;
+		Sleep(3000);
+	}
+	if (hesapsecimi == 2) {
+		int kenar1, kenar2, kenar3,kenar4;
+		cout << "1.kenar uzunlugu:";
+		cin >> kenar1;
+		cout << "2.kenar uzunlugu:";
+		cin >> kenar2;
+		int sonuc = (kenar1 + kenar2) * 2;
+		cout << sonuc << endl;
+		Sleep(3000);
+	}
+
+
+
+	return;
+}
+
+void kare() {
+	int hesapsecimi;
+	cout << "alani hesaplamak istiyorsaniz 1'i" << endl << "cevreyi hesaplamak istiyorsaniz 2'yi" << endl << "secim :";
+	cin >> hesapsecimi;
+
+	if (hesapsecimi == 1) {
+		int kenaruzunlugu;
+		cout << "kenar uzunlugu:";
+		cin >> kenaruzunlugu;
+		int sonuc = kenaruzunlugu*kenaruzunlugu;
+		cout << sonuc << endl;
+		Sleep(3000);
+	}
+	if (hesapsecimi == 2) {
+		int kenaruzunlugu;
+		cout << "kenar uzunlugu:";
+		cin >> kenaruzunlugu;
+		int sonuc = kenaruzunlugu * 4;
+		cout << sonuc << endl;
+		Sleep(3000);
+	}
+
+
+
+	return;
+}
+
+void cember() {
+	int hesapsecimi;
+	cout << "alani hesaplamak istiyorsaniz 1'i" << endl << "cevreyi hesaplamak istiyorsaniz 2'yi" << endl << "secim :";
+	cin >> hesapsecimi;
+
+	if (hesapsecimi == 1) {
+		int yaricap;
+		cout << "yaricap uzunlugu:";
+		cin >> yaricap;
+		float sonuc = 3.14*(yaricap*yaricap) ;
+		cout << sonuc << endl;
+		Sleep(3000);
+	}
+	if (hesapsecimi == 2) {
+		int yaricap;
+		cout << "yaricap uzunlugu:";
+		cin >> yaricap;
+		float sonuc =  2 * 3.14 * yaricap;
+		cout << sonuc << endl;
+		Sleep(3000);
+	}
+
+
+
+	return;
+}
+
+
+
+
+int main() {
+	int secim;
+
+	for (;;) {
+		system("CLS");
+		cout << "sekil secin" << endl << "1 : ucgen" << endl << "2 : dikdortgen" << endl << "3 : kare" << endl << "4 : cember" << endl<<"cikis yapmak icin 5'i"<<endl;
+		cout << "secim: ";
+		cin >> secim;
+		system("CLS");
+
+		switch (secim) {
+
+		case 1:
+			ucgen();
+			break;
+		case 2:
+			dikdortgen();
+			break;
+		case 3:
+			kare();
+			break;
+		case 4:
+			cember();
+			break;
+		case 5:
+			exit(0);
+			break;
+
+		default:
+			cout << "hatalı giris"<<endl;
+		}
+
+	}
+
+	return 0;
+}
