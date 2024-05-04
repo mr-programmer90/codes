@@ -1,0 +1,125 @@
+--- strlen();
+
+strlen komutu karakter dizisinin uzunluğunu gösterir
+#include<string.h> //strlen kodunun kütüphanesi
+
+//örnek kod:
+
+	char ad[100];
+		cout<<"adi gir : ";
+		scanf("%[^\n]",&ad); //burdaki % lik terim boşlukları da okutuyo koda
+		int veri = strlen(ad);
+		cout<<adu;
+// bu kod kullanıcıdan alınan değerin uzunluğunu gösterir
+-----------------------------------------------------------------------------------------------------------------------------
+--- sqrt();
+
+sqrt kodu içine girilen sayının karekökünü alır
+#include<string.h> //strlen kodunun kütüphanesi
+
+-----------------------------------------------------------------------------------------------------------------------------
+--- pow();
+
+pow komutu üslü sayı hesaplamada kullanılır
+#include<math.h> //pow kodunun kütüphanesi
+
+//örnek kod: pow ve sqrt kullanarak hipotenüs hesaplama
+
+double a,b;
+	cout<<"Birinci Uzunluk : ";
+	cin>>a;
+	cout<<"Ikinci Uzunluk : ";
+	cin>>b;
+	double u1 = pow(a,2);       // a'nın karesini u1 e eşitler
+	double u2 = pow(b,2);      // b'nin karesini u2 ye eşitler
+	double hipotenus =sqrt(u1 + u2);
+	cout<<hipotenus;
+
+-------------------------------------------------------------------------------------------------------------------------------- strlwr(); ve strlwr();
+
+strlwr 'a örnek verirsek girilen yazıyı küçük harfli haline çevirir ,strlupr 'a örnek verirsek girilen yazıyı büyük harfli haline çevirir
+#include<string.h> //strlwr ve strupr kodunun kütüphanesi
+
+//örnek kod:
+
+ char isim[100];
+	scanf("%[^\n]", &isim);
+	strlwr(isim); //büyk harfleri küçük yazar örnek: SELAM 'ı selam yapar
+	cout<<isim;
+	
+	//strupr ise tam teri büyütür, aynı kullanış
+-------------------------------------------------------------------------------------------------------------------------------- strrev();
+
+içine girilen değeri tersine çevirir
+#include<string.h> //strrev kodunun kütüphanesi
+
+örnek kod:
+
+	char isim[100];
+	scanf("%[^\n]",&isim);
+	strrev(isim); //diziyi tersine çeviriyo
+	cout<<isim;
+-------------------------------------------------------------------------------------------------------------------------------- strcat();
+
+iki değeri birbirine ekler
+#include<string.h> //strcat kodunun kütüphanesi
+
+örnek kod:
+
+char metin[100];
+		scanf("%[^\n]",&metin);
+		char metin2[100] = " Bey";
+		cout<<strcat(metin,metin2);
+-------------------------------------------------------------------------------------------------------------------------------- strcpy();
+
+ikinci değişkenin değerini kopyalayıp birinci değişkenin değeri olarak atar
+#include<string.h> //strcpy kodunun kütüphanesi
+
+örnek kod:
+
+char metin[100];
+		scanf("%[^\n]",&metin);
+		char k_metin[20];
+		strcpy(k_metin,metin);
+		cout<<k_metin;
+-------------------------------------------------------------------------------------------------------------------------------- abs(); ve fabs();
+
+//abs mutlak degere alir yani -5 i 5 e çevirir, fabs ise ondalık mutlak degerdir -7.5 i 7.5 yapar
+#include<math.h> //abs ve fabs kullanımı
+
+örnek kod:
+
+int s1;
+	cin>>s1; //ör -5
+	float s2;
+	cin>>s2; //ör -7.5
+	int s3 = abs(s1); //mutlak tam sayı yani 5
+	double s4 = fabs(s2);//mutlak ondalık sayı yani 7.5
+	cout<<s3<<s4;
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
